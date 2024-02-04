@@ -1,0 +1,20 @@
+.photo{
+    width: 50%;
+}
+.first_section{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+.text{
+    margin-right: 12%;
+    margin-left: 15%;
+    word-wrap: break-word;
+}
+h1{
+    font-size: 60px;
+}
+
+h3{
+    font-size: 27px;
+}
