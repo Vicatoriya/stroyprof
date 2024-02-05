@@ -1,20 +1,9 @@
  img{
     width: 100%;
 }
-/* .inside{
-    position: absolute;
-    right: 35%;
-    top:300px;
-    text-align: center;
-    width: 30%;
-    height: max-content;
-    background-color: white;
-} */ */
 
 .outer{
     width:100%;
-    background-image:url(../../pics/back.jpg);
-    height: fit-content;
     position: relative;
 }
 

@@ -4,8 +4,7 @@ import './Main_sec1.css'
 import image from '../../pics/back.jpg'
 
 export default function Main_sec1(){
-    return(
-        <>       
+    return(     
         <div className="outer">
         <img src={image}></img>
         <div className="inner">
@@ -15,7 +14,6 @@ export default function Main_sec1(){
             <p>Работаем только с известными отчественными и зарубежными брендами.</p>
         </div>
         </div>
-        </>
 
     )
 }
