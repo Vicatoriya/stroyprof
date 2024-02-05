@@ -2,16 +2,16 @@ import React from "react";
 import "./index.css";
 import Header from "./Components/Header/Header";
 import Upsite from "./Components/Upsite/Upsite";
-import First_section from "./Components/First_section/First_section";
+import First_section from "./Components/First_section/First_section"
+import Main_sec1 from "./Components/Main_sec1/Main_sec1";
 
 
 export default function App(){
     return(
         <div>
-              <Upsite></Upsite>
+            <Upsite></Upsite>
             <Header></Header>
-          
-            <First_section></First_section>
+            <Main_sec1></Main_sec1>
         </div>
     )
 }

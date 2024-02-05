@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import './Upsite.css';
+import '../../index.css'
 
 const Upsite = () => {
     const Item = styled.div`
@@ -8,7 +9,7 @@ const Upsite = () => {
   margin-left: 50px;
 `;
     return (
-        <div className = "upsite">
+        <div className = "upsite block">
             <Item>ЛОГО</Item>
             <Item>nazvanie</Item>
             <Item>+2838722378</Item>

@@ -9,11 +9,9 @@
 	font-family: 'Play'; 
 	src: url(./fonts/Play-Regular.ttf); 
 }
- 
 
-
-
-*{
+body{
     font-family: 'Play';
+	margin: 0px;
 }
 
