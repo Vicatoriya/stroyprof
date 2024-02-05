@@ -1,17 +1,16 @@
-/* Обычный */
+body{
+	margin: 0px 0px 0px 0px;
+}
 @font-face {
 	font-family: 'Play bold'; 
 	src: url(./fonts/Play-Bold.ttf); 
 }
- 
+/* Обычный */
 /* Жирный */
 @font-face {
 	font-family: 'Play'; 
 	src: url(./fonts/Play-Regular.ttf); 
 }
- 
-
-
 
 *{
     font-family: 'Play';
