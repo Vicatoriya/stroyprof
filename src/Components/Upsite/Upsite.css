@@ -1,6 +1,4 @@
 .upsite{
-    /*margin-left: 50px;*/
-    /*width: 1000px;*/
     height: 40px;
     align-items: center;
     display: flex;
@@ -8,5 +6,4 @@
     font-size: 25px;
     background-color:#333233;
     color:#ffff;
-    /*padding: 20px;*/
 }
