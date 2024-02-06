@@ -1,7 +1,6 @@
-import './C1.css';
 import MaterCard from "./vidmater_card";
 import styled from "styled-components";
-
+import Title from '../Title/Title';
 
 
 const C1 = () => {
@@ -14,7 +13,7 @@ const C1 = () => {
     `;
     return(
         <div className = "c1">
-            <h1 className={"t1"}>Виды материалов</h1>
+            <Title title="Виды материалов"></Title>
 
             {/*тут короче нужно для каждого
             элемента массива карточку MaterCard сделать*/}

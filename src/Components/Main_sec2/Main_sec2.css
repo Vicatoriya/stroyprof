@@ -1,0 +1,23 @@
+.form{
+    width: 70%;
+    height: fit-content;
+    background-color: #323231;
+    margin: auto;
+    border-radius: 55px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 500px;
+}
+
+button{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 3rem;
+    font-size: 20px;
+    padding:0 2.5rem  0 2.5rem;
+    background-color: #bd6a26;
+    color: white;
+    border-radius: 6px;
+}
