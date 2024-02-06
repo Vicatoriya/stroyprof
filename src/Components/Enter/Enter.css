@@ -1,12 +1,13 @@
 .control{
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
-    width: 36.5%;
-    margin: 0 0 1.5rem 3rem;
+    padding: 0.5rem;
+    width: 38%;
+    margin: 0 0 1rem 4%;
 }
 label{
     color: #bdbdbf;
     display: block;
-    padding: 1.5rem 0 1rem 3rem;
+    margin: 1.5rem 0 1rem 4%;
+    word-wrap: break-word;
 }

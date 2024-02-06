@@ -14,12 +14,12 @@ export default function App(){
         <div>
             <Upsite></Upsite>
             <Header></Header>
-            {/* <Main_sec1></Main_sec1>
+            <Main_sec1></Main_sec1>
             <Title title="Калькулятор кровли"></Title>
             <Main_sec2></Main_sec2>
-            <Title title="Виды работ"></Title> */}
-            <First_section/>
-            <C1/>
+            <Title title="Виды работ"></Title>
+            {/* <First_section/>
+            <C1/> */}
         </div>
     )
 }
