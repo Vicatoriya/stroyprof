@@ -2,37 +2,36 @@ import React from "react";
 import "../../index.css";
 import "../Enter/Enter.css"
 
-export default function Select({id,text}){
+export default function Select({text,name}){
     return(
         <>
-        <label htmlFor={id}>{text}</label>
-        <select style={{width:"40%"}} id={id} className="control">
+        <label htmlFor={name}>{text}</label>
+        <select name={name} style={{width:"40%"}} id={name} className="control">
             <option value="">Выберите подходящий вариант</option>
-            {id=="krov_form" &&
+            {name=="form" &&
             <>
-                <option value="one_scat">Односкатная</option>
-                <option value="two_scat">Двухскатная</option>
-                <option value="valm">Вальмовая</option>
-                <option value="shatr">Шатровая</option>
-                <option value="dif">Сложной формы</option>
+                <option value="Односкатная">Односкатная</option>
+                <option value="Двухскатная">Двухскатная</option>
+                <option value="Вальмовая">Вальмовая</option>
+                <option value="Сложной формы">Сложной формы</option>
             </>}
-            {id=="work_type" &&
-            <>
-                <option value="mont">Монтаж</option>
-                <option value="demont">Демонтаж</option>
-                <option value="demont+mont">Демонтаж+монтаж</option>
-                <option value="all">Полный комплекс</option>
-                <option value="unknown">Пока в раздумьях</option>
+            {name=="work" &&
+            <> 
+                <option value="Демонтаж">Демонтаж</option>
+                <option value="Монтаж">Монтаж</option>
+                <option value="Демонтаж+монтаж">Демонтаж+монтаж</option>
+                <option value="Полный комплекс">Полный комплекс</option>
+                <option value="Пока в раздумьях">Пока в раздумьях</option>
             </>}
-            {id=="krov_type" &&
+            {name=="type" &&
             <>
-                <option value="">Металлочерепица</option>
-                <option value="demont">Металлопрофиль</option>
-                <option value="demont+mont">Модульная черепица</option>
-                <option value="all">Композитная черепица</option>
-                <option value="unknown">Шифер</option>
-                <option value="unknown">Андулин</option>
-                <option value="unknown">Другое</option>
+                <option value="Металлочерепица">Металлочерепица</option>
+                <option value="Металлопрофиль">Металлопрофиль</option>
+                <option value="Модульная черепица">Модульная черепица</option>
+                <option value="Композитная черепица">Композитная черепица</option>
+                <option value="Шифер">Шифер</option>
+                <option value="Андулин">Андулин</option>
+                <option value="Другое">Другое</option>
             </>}
         </select>
         </>

@@ -2,11 +2,11 @@ import React from "react";
 import "../../index.css";
 import "./Enter.css"
 
-export default function Enter({id,text}){
+export default function Enter({text,name}){
     return(
         <>
-        <label htmlFor={id}>{text}</label>
-        <input type="text"  id={id} className="control"></input>
+        <label htmlFor={name}>{text}</label>
+        <input type="text" name={name} id={name} className="control"></input>
         </>
     )
 }
