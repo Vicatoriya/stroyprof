@@ -7,6 +7,7 @@ import C1 from "./Components/Additional_Pager/vidi_mater";
 import First_section from "./Components/First_section/First_section";
 import Title from "./Components/Title/Title";
 import Main_sec2 from "./Components/Main_sec2/Main_sec2";
+import Call from "./Components/Call/Call";
 
 
 export default function App(){
@@ -18,6 +19,7 @@ export default function App(){
             <Title title="Калькулятор кровли"></Title>
             <Main_sec2></Main_sec2>
             <Title title="Виды работ"></Title>
+            <Call></Call>
             {/* <First_section/>
             <C1/> */}
         </div>

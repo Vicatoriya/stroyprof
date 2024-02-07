@@ -1,0 +1,31 @@
+.call_sec{
+    height: 250px;
+    background-color: #323231;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.call{
+    color: white;
+    font-size: 23px;
+    padding-top: 50px;
+}
+.input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.8rem;
+    width: 25%;
+    margin-top: 5px;
+}
+
+.call_button{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 3rem;
+    font-size: 17px;
+    padding:0 2% 0 2%;
+    background-color: #bd6a26;
+    color: white;
+    border-radius: 6px;
+}

@@ -1,4 +1,4 @@
-import React,{useRef,useState} from "react";
+import React,{useRef} from "react";
 import "../../index.css";
 import "./Main_sec2.css"
 import Enter from "../Enter/Enter";
@@ -34,7 +34,7 @@ export default function Main_sec2(){
           <Enter name="address" text="Местонахождение объекта"></Enter>
           <Enter name="phone" text="Телефон для связи" ></Enter>
           <Enter name="name" text="Ваше имя" ></Enter> 
-          <button type="submit" onClick={handleClick}>Рассчитать</button> 
+          <button type="submit">Рассчитать</button> 
         </form>
     )
 }
