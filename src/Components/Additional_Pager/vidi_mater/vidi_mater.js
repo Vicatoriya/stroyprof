@@ -1,6 +1,6 @@
 import MaterCard from "./vidmater_card";
 import styled from "styled-components";
-import Title from '../Title/Title';
+import Title from '../../Title/Title';
 
 
 const C1 = () => {
