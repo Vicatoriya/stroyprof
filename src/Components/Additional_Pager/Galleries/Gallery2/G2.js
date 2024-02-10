@@ -1,4 +1,6 @@
+import React, { useEffect } from 'react';
 import './G2.css';
+import '../Gallery1/data';
 const G2 = () => {
     let slideIndex = 0;
 
@@ -22,29 +24,31 @@ const G2 = () => {
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}
             slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 3500); // Change image every 2 seconds
+            setTimeout(showSlides, 3500); // Change image every 3.5 seconds
         }
     }
 
-    // Ждем полной загрузки DOM перед вызовом showSlides
-    document.addEventListener("DOMContentLoaded", showSlides);
+    useEffect(() => {
+        // Вызываем showSlides сразу после рендеринга компонента
+        showSlides();
+    }, []);
 
     return (
         <div>
             <div className="slideshow-container">
                 <div className="mySlides fade">
                     <div className="numbertext">1 / 3</div>
-                    <img src="img4gallery2/1.jpg" style={{ width: '100%' }} />
+                    <img src={"img4gallery2/1.jpg"} alt={"alt"} style={{ width: '100%' }} />
                 </div>
 
                 <div className="mySlides fade">
                     <div className="numbertext">2 / 3</div>
-                    <img src="img4gallery2/2.jpg" style={{ width: '100%' }} />
+                    <img src={"img4gallery2/2.jpg"} alt={"alt"}style={{ width: '100%' }} />
                 </div>
 
                 <div className="mySlides fade">
                     <div className="numbertext">3 / 3</div>
-                    <img src="img4gallery2/3.jpg" style={{ width: '100%' }} />
+                    <img src={"img4gallery2/3.jpg"} alt={"alt"} style={{ width: '100%' }} />
                 </div>
 
                 <a className="prev" onClick={() => plusSlides(-1)}>

@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import './Upsite.css';
 import '../../index.css'
-
-const Upsite = () => {
-    const Item = styled.div`
+const Item = styled.div`
   margin-right: 100px;
   margin-left: 50px;
 `;
+const Upsite = () => {
+
     return (
         <div className = "upsite block">
             <Item>ЛОГО</Item>

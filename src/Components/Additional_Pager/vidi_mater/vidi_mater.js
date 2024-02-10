@@ -1,16 +1,16 @@
 import MaterCard from "./vidmater_card";
 import styled from "styled-components";
 import Title from '../../Title/Title';
-
-
-const C1 = () => {
-    const Cards = styled.div`
+const Cards = styled.div`
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       margin-left: 100px;
       margin-right: 100px;
     `;
+
+const C1 = () => {
+
     return(
         <div className = "c1">
             <Title title="Виды материалов"></Title>
