@@ -8,6 +8,7 @@ import First_section from "./Components/First_section/First_section";
 import Title from "./Components/Title/Title";
 import Main_sec2 from "./Components/Main_sec2/Main_sec2";
 import Call from "./Components/Call/Call";
+import Price from "./Components/Price/Price"
 
 
 export default function App(){
@@ -22,6 +23,7 @@ export default function App(){
             <Call></Call>
             {/* <First_section/>
             <C1/> */}
+            {/* <Price/> */}
         </div>
     )
 }
