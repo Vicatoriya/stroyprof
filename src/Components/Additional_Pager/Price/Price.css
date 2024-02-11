@@ -1,0 +1,24 @@
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 75%;
+    margin: 20px;
+}
+th, td{
+    border: 2px solid #333233; /* Устанавливаем границу для ячеек */
+    padding: 8px;
+    text-align: center;
+}
+th,.exception {
+    text-align: center;
+    background-color: #333233;
+    color:#ffff;
+    font-size: 17px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    align-items: center;
+}
