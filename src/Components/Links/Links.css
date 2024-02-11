@@ -1,0 +1,22 @@
+.cont{
+    display: flex;
+    margin: 0 10% 70px 10%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pic{
+    width: 25%;
+    position: relative;
+}
+.upper_text{
+    position: absolute;
+    top:35%;
+    color: white;
+    text-align: center;
+    margin:auto;
+    left: 0;
+    right: 0;
+}
+.upper_text h4{
+    font-size: 19px;
+}
