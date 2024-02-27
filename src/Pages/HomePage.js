@@ -17,7 +17,6 @@ import G2 from "../Components/Additional_Pager/Galleries/Gallery2/G2"
 const HomePage = () =>  {
     return(
         <div>
-            <a href="/SecApp">secapp</a>
             <Upsite/>
             <Header/>
             <Main_sec1/>

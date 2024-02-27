@@ -1,14 +1,13 @@
 import React from "react";
 import "../../index.css";
 import "../Links/Links.css"
-import img from "./rob1_small.jpg"
-export default function Links_pic(){
+export default function Links_pic({name,link,pic}){
     return(
     <div className="pic">
-    <img src={img}></img>
+    <img src={pic} alt = {""}></img>
     <div className="upper_text">
-        <h3>Кровля</h3>
-        <h4>Подробнее...</h4>
+        <h3>{name}</h3>
+        <a href = {link} >Подробнее...</a>
     </div>
     </div>
     )

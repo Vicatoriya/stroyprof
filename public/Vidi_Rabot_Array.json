@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Кровля",
+    "link": "/roof",
+    "pic": "img4gallery1/1.jpg"
+  },
+  {
+    "name": "Отделка вагонкой",
+    "link": "/clapboard",
+    "pic": "img4gallery1/1.jpg"
+  },
+  {
+    "name": "Отделка деревом",
+    "link": "/wood_trim",
+    "pic": "img4gallery1/1.jpg"
+  },
+  {
+    "name": "Отделка парилок",
+    "link": "/steam_rooms",
+    "pic": "img4gallery1/1.jpg"
+  },
+  {
+    "name": "Ремонт кровли",
+    "link": "/roof_repair",
+    "pic": "img4gallery1/1.jpg"
+  },
+  {
+    "name": "Электрика",
+    "link": "/Electrics",
+    "pic": "img4gallery1/1.jpg"
+  }
+]
