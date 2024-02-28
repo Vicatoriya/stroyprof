@@ -1,0 +1,9 @@
+.about_sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.about_pic{
+    width: 30%;
+    min-width:250px; 
+}

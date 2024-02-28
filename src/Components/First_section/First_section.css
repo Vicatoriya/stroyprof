@@ -1,20 +1,31 @@
 .photo{
-    width: 50%;
+    width: 45%;
+    margin-left: 100px;
 }
 .first_section{
     display: flex;
+    flex-direction: row;    
+    padding-top: 12px;
+    font-family: 'Play bold';
     /* flex-wrap: wrap; */
-    justify-content: center;
+    /* justify-content: center; */
 }
-.text{
-    margin-right: 12%;
-    margin-left: 15%;
-    word-wrap: break-word;
-}
-h1{
+.first_section h1{
+    /* font: 'Play bold'; */
+    /* font-weight: bold; */
     font-size: 60px;
 }
-
-h3{
-    font-size: 27px;
+.first_section .text{
+    margin-right: 12%;
+    margin-left: 15%;
+    padding-bottom: 30px;
+    
+    word-wrap: break-word;
 }
+.first_section p{
+    font-size: 30px;
+}
+
+/* h3{
+    font-size: 27px;    
+} */

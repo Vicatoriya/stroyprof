@@ -2,31 +2,41 @@
   {
     "name": "Кровля",
     "link": "/roof",
-    "pic": "img4gallery1/1.jpg"
+    "pic": "vidi_rabot_photo/1.png"
   },
   {
     "name": "Отделка вагонкой",
     "link": "/clapboard",
-    "pic": "img4gallery1/1.jpg"
+    "pic": "vidi_rabot_photo/2.png"
   },
   {
     "name": "Отделка деревом",
     "link": "/wood_trim",
-    "pic": "img4gallery1/1.jpg"
+    "pic": "vidi_rabot_photo/3.png"
   },
   {
     "name": "Отделка парилок",
     "link": "/steam_rooms",
-    "pic": "img4gallery1/1.jpg"
+    "pic": "vidi_rabot_photo/4.png"
   },
   {
     "name": "Ремонт кровли",
     "link": "/roof_repair",
-    "pic": "img4gallery1/1.jpg"
+    "pic": "vidi_rabot_photo/5.png"
   },
   {
     "name": "Электрика",
     "link": "/Electrics",
-    "pic": "img4gallery1/1.jpg"
+    "pic": "vidi_rabot_photo/6.png"
+  },
+  {
+    "name": "Ремонт кровли",
+    "link": "/roof_repair",
+    "pic": "vidi_rabot_photo/7.png"
+  },
+  {
+    "name": "Электрика",
+    "link": "/Electrics",
+    "pic": "vidi_rabot_photo/8.png"
   }
 ]

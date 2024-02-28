@@ -4,15 +4,15 @@ import '../../index.css'
 
 const Header = () => {
     return (
-        <div className = "header block">
-            <h3>Главная</h3>
-            <h3>Расчет кровли</h3>
-            <h3>Виды работ</h3>
-            <h3>Заказать звонок</h3>
-            <h3>О нас</h3>
-            <h3>Контакты</h3>
+        <header className = "header block">
+            <p>Главная</p>
+            <p>Расчет кровли</p>
+            <p>Виды работ</p>
+            <p>Заказать звонок</p>
+            <p>О нас</p>
+            <p>Контакты</p>
 
-        </div>
+        </header>
     );
 };
 export default Header;

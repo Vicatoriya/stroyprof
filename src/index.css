@@ -1,6 +1,3 @@
-body{
-	margin: 0px 0px 0px 0px;
-}
 @font-face {
 	font-family: 'Play bold'; 
 	src: url(./fonts/Play-Bold.ttf); 
@@ -8,11 +5,23 @@ body{
 /* Обычный */
 /* Жирный */
 @font-face {
-	font-family: 'Play'; 
+	font-family: 'Play regular'; 
 	src: url(./fonts/Play-Regular.ttf); 
 }
 
 *{
-    font-family: 'Play';
+    font-family: 'Play regular';
+	margin: 0 0 0 0;
 }
-
+h1{
+	font-family: 'Play bold';
+	font-weight: bold;
+}
+h2{
+	font-size: 35px;
+	font-family: 'Play bold';
+}
+h3{
+	font-size: 25px;
+	font-family: 'Play regular';
+}

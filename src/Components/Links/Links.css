@@ -7,6 +7,12 @@
 .pic{
     width: 25%;
     position: relative;
+    height: fit-content;
+}
+
+.pic img{
+    width:100%;
+    padding-right: 3px;
 }
 .upper_text{
     position: absolute;
@@ -19,4 +25,7 @@
 }
 .upper_text h4{
     font-size: 19px;
+}
+.pic a {
+    color: white;
 }

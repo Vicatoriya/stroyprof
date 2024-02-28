@@ -1,36 +1,30 @@
- img{
+.main_img{
     width: 100%;
-}
-
-.outer{
-    width:100%;
     position: relative;
 }
 
-.inner {
-    background-color: white;
+.main_text{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 34%;
-    right: 33%;
+    bottom: 30%;
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-left: 5%;
+}
+.box{
+    position: relative;
 }
 
-h2{
-    font-size: 38px;
-    margin:35px 0 5px;
+.main_text h2{
+    margin-bottom: 10px;
 }
 
-h3{
-    font-size: 33px;
-    margin: 0 0 10px 0;
+.main_text p{
+    text-align: left;
+    font-size: 23px;
+    margin-top: 5px;
 }
-p{
-    text-align: center;
-    font-size: 20px;
-    margin: 0 0 5px 0;
-}
-.tab{
-    margin-bottom: 35px;
+
+.text_title{
+    margin-bottom: 30px;
 }

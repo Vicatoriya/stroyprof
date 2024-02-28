@@ -1,8 +1,10 @@
 .header{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin:15px 100px 15px 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color:#343233;
+    font-family: "Play";
+    font-weight:400;
+    font-size: 25px;
 }
