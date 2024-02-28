@@ -20,5 +20,6 @@ th,.exception {
     flex-direction: column;
 }
 .price{
+    margin-bottom: 60px;
     align-items: center;
 }

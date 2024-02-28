@@ -7,6 +7,7 @@ import Price from "../Components/Additional_Pager/Price/Price";
 import G1 from "../Components/Additional_Pager/Galleries/Gallery1/G1";
 import G2 from "../Components/Additional_Pager/Galleries/Gallery2/G2";
 import First_section from '../Components/First_section/First_section';
+import Title from "../Components/Title/Title";
 const Krovla = () => {
     return(
         <div>
@@ -15,7 +16,7 @@ const Krovla = () => {
             <First_section/>
             <C1/>
             <Price/>
-            <h1 className={"t1"}>Примеры работ</h1>
+            <Title title={"Примеры работ"}/>
             <G1/>
             <G2/>
         </div>

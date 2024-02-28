@@ -2,13 +2,14 @@ import MaterCard from "./vidmater_card";
 import styled from "styled-components";
 import Title from '../../Title/Title';
 import {useEffect, useState} from "react";
-const Cards = styled.div`
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-left: 100px;
-      margin-right: 100px;
-    `;
+import './vidi_mater.css';
+// const Cards = styled.div`
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: space-around;
+//       margin-left: 100px;
+//       margin-right: 100px;
+//     `;
 
 const C1 = () => {
     const [CoverTypesData,setCoverTypesData] = useState([]);
@@ -37,12 +38,12 @@ const C1 = () => {
 
             {/*тут короче нужно для каждого
             элемента массива карточку MaterCard сделать*/}
-            <Cards>
+            <div className="cardsVM">
                 {CoverTypesData.map((coverType,index)=>(
 
                 <MaterCard path={coverType.pic} text={coverType.name}/>
                 ))}
-            </Cards>
+            </div>
         </div>
     );
 };

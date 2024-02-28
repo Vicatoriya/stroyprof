@@ -1,0 +1,35 @@
+.CardForVM{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 2.5% 15px 2.5%;
+    /*align-items: center;*/
+    text-align: center;
+    flex-wrap: wrap;
+    white-space: pre-line;
+    width: 200px;
+    font-size: 20px;
+    /*font-family: "Play bold";*/
+}
+.picc{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 7px;
+}
+.cardsVM{
+    /*margin-left: 150px;*/
+    width: 1000px;
+       display: flex;
+       flex-wrap: wrap;
+       /*justify-content: space-around;*/
+       /*margin-left: 100px;*/
+       /*margin-right: 100px;*/
+}
+.c1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
