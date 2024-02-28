@@ -1,6 +1,7 @@
 import MaterCard from "./vidmater_card";
 import styled from "styled-components";
 import Title from '../../Title/Title';
+import {useEffect, useState} from "react";
 const Cards = styled.div`
       display: flex;
       flex-wrap: wrap;
@@ -10,7 +11,26 @@ const Cards = styled.div`
     `;
 
 const C1 = () => {
-
+    const [CoverTypesData,setCoverTypesData] = useState([]);
+    useEffect(()=> {
+        const fetchData = async () => {
+            try{
+                const response =await fetch('Krovla_array.json');
+                if (!response.ok) {
+                    throw new Error('Ошибка при загрузке файла');
+                }
+                const jsonData = await response.json();
+                const extractedData = jsonData[0].cover_types.map(coverType => ({
+                    name: coverType.name,
+                    pic: coverType.pic
+                }));
+                setCoverTypesData(extractedData);
+            } catch (error){
+                console.error('ошибка при загрузке и обработке данных',error);
+            }
+        }
+        fetchData();
+    },[]);
     return(
         <div className = "c1">
             <Title title="Виды материалов"></Title>
@@ -18,14 +38,10 @@ const C1 = () => {
             {/*тут короче нужно для каждого
             элемента массива карточку MaterCard сделать*/}
             <Cards>
-                <MaterCard path={'../pics/vidi_mater/1.jpg'} text={'text1'}/>
-                <MaterCard path={'../pics/vidi_mater/2.jpg'} text={'text2'}/>
-                <MaterCard path={'../pics/vidi_mater/3.jpg'} text={'text3'}/>
-                <MaterCard path={'../pics/vidi_mater/4.jpg'} text={'text4'}/>
-                <MaterCard path={'../pics/vidi_mater/5.jpg'} text={'text5'}/>
-                <MaterCard path={'../pics/vidi_mater/6.jpg'} text={'text6'}/>
-                <MaterCard path={'../pics/vidi_mater/7.jpg'} text={'text7'}/>
-                <MaterCard path={'../pics/vidi_mater/8.jpg'} text={'text8'}/>
+                {CoverTypesData.map((coverType,index)=>(
+
+                <MaterCard path={coverType.pic} text={coverType.name}/>
+                ))}
             </Cards>
         </div>
     );

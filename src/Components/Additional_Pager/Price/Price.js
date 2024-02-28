@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import DataTable from './Table';
 import '../vidi_mater/C1.css';
 import './Price.css';
@@ -16,10 +16,32 @@ const dataArray = [
 ];
 
 const Price = () => {
+    const [PriceData,setPriceData] = useState([]);
+    useEffect(()=>{
+        const fetchData = async()=>{
+            try{
+                const response = await fetch('Krovla_array.json');
+                if(!response.ok){
+                    throw new Error('Ошибка при загрузке файла');
+                }
+                const jsonData = await response.json();
+                const extractedData = jsonData[0].prices.map(price=>({
+                    name: price.name,
+                    cost: price.cost,
+                    metrics: price.metrics
+                }));
+                setPriceData(extractedData);
+            }catch (error){
+                console.error('ошибка при загрузке и обработке данных', error);
+            }
+        }
+        fetchData();
+    },[]);
     return(
         <div className={'price'} >
             <h1 className={"t1"}>Прайс</h1>
-            <DataTable className={'tablica'} data={dataArray} />
+
+            <DataTable className={'tablica'} data={PriceData} />
         </div>)
 };
 export default Price;

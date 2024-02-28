@@ -13,7 +13,7 @@ const DataTable=({ data })=> {
             </tr>
             </thead>
             <tbody>
-            {data.slice(0, separatorIndex).map((row, index) => (
+            {data.map((row, index) => (
                 <tr key={index}>
                     <td>{row[0]}</td>
                     <td>{row[1]}</td>
