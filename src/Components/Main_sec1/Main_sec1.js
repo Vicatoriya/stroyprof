@@ -1,7 +1,7 @@
 import React from "react";
 import "../../index.css";
 import './Main_sec1.css'
-import image from '../../pics/back.jpg'
+import image from '../../pics/back.png'
 
 export default function Main_sec1(){
     return(     

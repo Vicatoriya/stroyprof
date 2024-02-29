@@ -6,8 +6,10 @@
 }
 .pic{
     width: 25%;
+    min-width: 200px;
     position: relative;
     height: fit-content;
+    align-content: center;
 }
 
 .pic img{
@@ -16,16 +18,22 @@
 }
 .upper_text{
     position: absolute;
-    top:35%;
+    top:30%;
     color: white;
     text-align: center;
     margin:auto;
     left: 0;
     right: 0;
 }
-.upper_text h4{
-    font-size: 19px;
-}
+
 .pic a {
     color: white;
+    font-size: 19px;
+}
+
+.upper_text h3{
+    word-wrap:break-word;
+    max-width: 80%;
+    margin: auto;
+    font-size: 24px;
 }
