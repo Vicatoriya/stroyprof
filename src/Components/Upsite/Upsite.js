@@ -2,18 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import './Upsite.css';
 import '../../index.css'
-const Item = styled.div`
-  margin-right: 100px;
-  margin-left: 50px;
-`;
+import logo from "../../pics/logo.png"
+
 const Upsite = () => {
 
     return (
-        <div className = "upsite block">
-            <Item>ЛОГО</Item>
-            <Item>nazvanie</Item>
-            <Item>+2838722378</Item>
-            <Item>minsk</Item>
+        <div className='upsite'>
+            <div className = "upsite_content">
+                <p>STROYPROF</p>
+                <div className='together'>
+                    <p>+375298688955</p>
+                    <p>Belarus, Minsk</p>
+                </div>
+            </div>
+            <div className="orange_rib"></div>
         </div>
     );
 };

@@ -58,6 +58,7 @@ import Title from "../Components/Title/Title";
 import Vid_Krovli from "../Components/Additional_Pager/Vid_krovli/Vid_Krovli";
 import data2 from "./data/forKrov/DataForG2krov";
 import data1 from "./data/forKrov/Examples";
+import Footer from '../Components/Footer/Footer';
 // import data from "./data/ex.json";
 const Krovla = () => {
     const [frstData, setData] = useState([]);
@@ -109,6 +110,7 @@ const Krovla = () => {
             <Title title={"Примеры работ"} />
             <G1 data={data1} />
             <G2 data={data2} />
+            <Footer></Footer>
         </div>
     );
 };

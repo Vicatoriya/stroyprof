@@ -14,15 +14,16 @@
 .contacts_text{
     text-align: center;
     color: white;
-    padding-top: 40px;
+    padding-top: 35px;
     margin-bottom: 25px;
-    font-size: 28px;
+    font-size: 30px;
 }
 .number{
     text-align: center;
-    margin: 3px;
+    margin: 10px;
     color: #bdbdbf;
-    font-size: 23px;
+    font-size: 25px;
+    font-family: "Play regular";
 }
 
 .small_orange_ribbon{

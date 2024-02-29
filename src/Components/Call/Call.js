@@ -12,7 +12,7 @@ export default function Call(){
     //         publicKey: 'IgseQxdVOTCsugiKI',});
     };
     return(
-        <form ref={form} onSubmit={sendEmail} className="call_sec">
+        <form id="call" ref={form} onSubmit={sendEmail} className="call_sec">
             <p className="call">Заказать звонок специалиста</p>
             <input type="text" name="phone" className="input"></input>
             <button className="call_button" type="submit">Отправить запрос</button> 

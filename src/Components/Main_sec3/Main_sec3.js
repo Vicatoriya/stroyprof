@@ -12,7 +12,6 @@ import img6 from "../../pics/about_us/about_us6.png"
 export default function Main_sec3(){
     return(
         <>
-            <Title title="О нас"></Title>
             <div className="about_sec">
                 <img className="about_pic" src={img1}></img>
                 <img  className="about_pic" src={img2}></img>

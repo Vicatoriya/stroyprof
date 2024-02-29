@@ -12,20 +12,19 @@ import Footer from "../Components/Footer/Footer";
 
 const HomePage = () =>  {
     return(
-        <div>
+        <>
             <Upsite/>
             <Header/>
             <Main_sec1/>
-            <Title title="Расчет кровли"/>
-            <Main_sec2/>
-            <Title title="Виды работ"/>
+            <Title  id="calc" title="Расчет кровли"/>
+            <Main_sec2 />
+            <Title id="work_types"title="Виды работ"/>
             <Links/>
             <Call/>
+            <Title id="about_us" title="О нас"></Title>
             <Main_sec3/>
             <Footer/>
-            <></>
-
-        </div>
+        </>
     )
 }
 export default HomePage;

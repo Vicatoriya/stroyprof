@@ -5,7 +5,7 @@ import image from '../../pics/back.png'
 
 export default function Main_sec1(){
     return(     
-        <div className="box">
+        <div id="main" className="box">
             <img className="main_img" src={image}></img>
             <div className="main_text">
                 <div className="text_title">
