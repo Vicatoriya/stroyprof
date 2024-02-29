@@ -1,0 +1,25 @@
+.bckgr1{
+    /*width: 400px;*/
+    height: 750px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+.unit{
+    width: 800px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.par{
+    width: 600px;
+    margin-left: 14px;
+    padding-bottom: 4px;
+}
+.peaceOfText{
+    margin-bottom: 20px;
+}
+.n{
+    margin-bottom: 50px;
+}

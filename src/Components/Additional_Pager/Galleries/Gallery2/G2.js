@@ -1,55 +1,38 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './G2.css';
-import '../Gallery1/data';
-const G2 = () => {
-    let slideIndex = 0;
+
+const G2 = ({data}) => {
+    const [slideIndex, setSlideIndex] = useState(0);
 
     function plusSlides(n) {
-        showSlides(slideIndex += n);
+        showSlides(slideIndex + n);
     }
 
     function currentSlide(n) {
-        showSlides(slideIndex = n);
+        showSlides(n - 1);
     }
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-
-        // Проверка, что slides не равен null или undefined
-        if (slides && slides.length > 0) {
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 3500); // Change image every 3.5 seconds
-        }
+    function showSlides(newIndex) {
+        setSlideIndex(newIndex);
     }
 
     useEffect(() => {
-        // Вызываем showSlides сразу после рендеринга компонента
-        showSlides();
-    }, []);
+        const intervalId = setInterval(() => {
+            showSlides((slideIndex + 1) % data.length);
+        }, 3500);
+
+        return () => clearInterval(intervalId);
+    }, [slideIndex, data]);
 
     return (
-        <div>
+        <div className={"G2"}>
             <div className="slideshow-container">
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src={"img4gallery2/1.jpg"} alt={"alt"} style={{ width: '100%' }} />
-                </div>
-
-                <div className="mySlides fade">
-                    <div className="numbertext">2 / 3</div>
-                    <img src={"img4gallery2/2.jpg"} alt={"alt"}style={{ width: '100%' }} />
-                </div>
-
-                <div className="mySlides fade">
-                    <div className="numbertext">3 / 3</div>
-                    <img src={"img4gallery2/3.jpg"} alt={"alt"} style={{ width: '100%' }} />
-                </div>
+                {data.map((item, index) => (
+                    <div key={index} className={`mySlides fade ${index === slideIndex ? 'show' : 'hide'}`}>
+                        <div className="numbertext">{`${index + 1} / ${data.length}`}</div>
+                        <img className={"picct"} src={item.image} alt={item.caption} style={{ width: '100%' }} />
+                    </div>
+                ))}
 
                 <a className="prev" onClick={() => plusSlides(-1)}>
                     &#10094;
@@ -61,9 +44,9 @@ const G2 = () => {
             <br />
 
             <div style={{ textAlign: 'center' }}>
-                <span className="dot" onClick={() => currentSlide(1)}></span>
-                <span className="dot" onClick={() => currentSlide(2)}></span>
-                <span className="dot" onClick={() => currentSlide(3)}></span>
+                {data.map((_, index) => (
+                    <span key={index} className={`dot ${index === slideIndex ? 'active' : ''}`} onClick={() => currentSlide(index + 1)}></span>
+                ))}
             </div>
             <br />
         </div>

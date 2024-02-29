@@ -1,5 +1,4 @@
 import {Carousel} from 'react-carousel-minimal';
-import data from './data'
 const captionStyle={
     fontSize: '2em',
     fontWeight: 'bold',
@@ -8,7 +7,7 @@ const slideNumberStyle = {
     fontSize: '20px',
     fontWeight: 'bold',
 }
-const G1 = ()=>{
+const G1 = ({data})=>{
     return(
         <Carousel
             data={data}

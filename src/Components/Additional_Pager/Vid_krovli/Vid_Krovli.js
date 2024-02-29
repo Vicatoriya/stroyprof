@@ -1,7 +1,7 @@
 import Title from "../../Title/Title";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Paragraph from "./Text_Paragraph";
-
+import "./Vid_Krovli.css";
 const Vid_Krovli = () =>{//RoofTypeData
     const [RoofTypeData,setPriceData] = useState([]);
     useEffect(()=>{
@@ -25,11 +25,16 @@ const Vid_Krovli = () =>{//RoofTypeData
     },[]);
 
     return(
-        <div>
-            <Title title={"Какой вид кровли вы выбрали?"}/>
-            {RoofTypeData.map((item,index)=>(
-            <Paragraph title={item.title} paragraph={item.paragraph}/>
-            ))}
+        <div className={"n"}>
+            <img className={"bckgr1"} src = {"bckgr/vid_krovli_bckgr1.jpg"} alt={"alt"}/>
+            <div className={"unit"}>
+                <Title title={"Какой вид кровли вы выбрали?"}/>
+                {RoofTypeData.map((item,index)=>(
+                    <Paragraph title={item.title} paragraph={item.paragraph}/>
+                ))}
+            </div>
+
+
         </div>
     );
 }
