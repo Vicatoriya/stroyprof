@@ -1,0 +1,23 @@
+[
+  {
+    "derevo_types":
+    [
+      {
+        "name":"Планкен",
+        "pic": "materials_roof/5.png"
+      },
+      {
+        "name":"Вагонка",
+        "pic": "materials_roof/2.png"
+      },
+      {
+        "name":"Имитация бруса",
+        "pic": "materials_roof/9.jpeg"
+      },
+      {
+        "name":"Блокхаус",
+        "pic": "materials_roof/8.png"
+      }
+    ]
+  }
+]

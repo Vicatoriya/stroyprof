@@ -56,39 +56,57 @@ import G2 from "../Components/Additional_Pager/Galleries/Gallery2/G2";
 import First_section from '../Components/First_section/First_section';
 import Title from "../Components/Title/Title";
 import Vid_Krovli from "../Components/Additional_Pager/Vid_krovli/Vid_Krovli";
-import data2 from "./data/DataForG2krov";
-import data1 from "./data/Examples";
+import data2 from "./data/forKrov/DataForG2krov";
+import data1 from "./data/forKrov/Examples";
 // import data from "./data/ex.json";
 const Krovla = () => {
-    // const [GalleryData, setGalleryData] = useState([]);
-    //
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const response = await fetch('Examples.json');
-    //             if (!response.ok) {
-    //                 throw new Error('Ошибка при загрузке файла');
-    //             }
-    //             const jsonData = await response.json();
-    //             setGalleryData(jsonData[0]);
-    //         } catch (error) {
-    //             console.error('ошибка при загрузке и обработке данных', error);
-    //         }
-    //     };
-    //
-    //     fetchData();
-    // }, []);
+    const [frstData, setData] = useState([]);
 
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('frstsectKrovData.json');
+                if (!response.ok) {
+                    throw new Error('Ошибка при загрузке файла');
+                }
+                const jsonData = await response.json();
+                setData(jsonData[0]);
+            } catch (error) {
+                console.error('ошибка при загрузке и обработке данных', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+    const [CoverTypesData,setCoverTypesData] = useState([]);
+    useEffect(()=> {
+        const fetchData = async () => {
+            try{
+                const response =await fetch('Krovla_array.json');
+                if (!response.ok) {
+                    throw new Error('Ошибка при загрузке файла');
+                }
+                const jsonData = await response.json();
+                const extractedData = jsonData[0].cover_types.map(coverType => ({
+                    name: coverType.name,
+                    pic: coverType.pic
+                }));
+                setCoverTypesData(extractedData);
+            } catch (error){
+                console.error('ошибка при загрузке и обработке данных',error);
+            }
+        }
+        fetchData();
+    },[]);
     return (
         <div>
             <Upsite />
             <Header />
-            <First_section />
-            <C1 />
+            <First_section data={frstData}/>
+            <C1 data={CoverTypesData}/>
             <Vid_Krovli />
             <Price />
             <Title title={"Примеры работ"} />
-            {/* Передача массива g1 в компонент G1 */}
             <G1 data={data1} />
             <G2 data={data2} />
         </div>
