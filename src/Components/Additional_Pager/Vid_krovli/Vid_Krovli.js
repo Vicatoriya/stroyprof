@@ -28,7 +28,7 @@ const Vid_Krovli = () =>{//RoofTypeData
         <div className={"n"}>
             <img className={"bckgr1"} src = {"bckgr/vid_krovli_bckgr1.jpg"} alt={"alt"}/>
             <div className={"unit"}>
-                <Title title={"Какой вид кровли вы выбрали?"}/>
+                <h1 className={"questTitle"}>Какой вид кровли вы выбрали?</>
                 {RoofTypeData.map((item,index)=>(
                     <Paragraph title={item.title} paragraph={item.paragraph}/>
                 ))}
