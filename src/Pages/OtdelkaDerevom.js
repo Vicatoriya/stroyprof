@@ -3,6 +3,8 @@ import First_section from "../Components/First_section/First_section";
 import Upsite from "../Components/Upsite/Upsite";
 import Header from "../Components/Header/Header";
 import C1 from "../Components/Additional_Pager/vidi_mater/vidi_mater";
+import Footer from "../Components/Footer/Footer";
+import Call from "../Components/Call/Call";
 export default function OtdelkaDerevom(){
     const [frstData, setData] = useState([]);
 
@@ -48,7 +50,8 @@ export default function OtdelkaDerevom(){
             <Header />
             <First_section data={frstData}/>
             <C1 data={DerevoTypesData}/>
-
+            <Call/>
+            <Footer/>
         </div>
     )
 }
