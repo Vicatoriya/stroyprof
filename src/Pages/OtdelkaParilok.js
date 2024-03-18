@@ -8,6 +8,7 @@ import "./Remont.css";
 import data1 from "./data/forParilkas/DataForG1parilka";
 import G1 from "../Components/Additional_Pager/Galleries/Gallery1/G1";
 import Title from "../Components/Title/Title";
+import Price from "../Components/Additional_Pager/Price/Price";
 export default function OtdelkaParilok(){
     const [frstData, setData] = useState([]);
 
@@ -27,11 +28,13 @@ export default function OtdelkaParilok(){
 
         fetchData();
     }, []);
+
     return(
         <div className={"remont"}>
             <Upsite/>
             <Header/>
             <First_section data={frstData}/>
+
             <Title title={"Примеры работ"} />
             <G1 data={data1}/>
             <Call/>
