@@ -5,6 +5,9 @@ import Header from "../Components/Header/Header";
 import C1 from "../Components/Additional_Pager/vidi_mater/vidi_mater";
 import Footer from "../Components/Footer/Footer";
 import Call from "../Components/Call/Call";
+import Title from "../Components/Title/Title";
+import G1 from "../Components/Additional_Pager/Galleries/Gallery1/G1";
+import data1 from "./data/forDerev/DataForG1derevo";
 export default function OtdelkaDerevom(){
     const [frstData, setData] = useState([]);
 
@@ -50,6 +53,8 @@ export default function OtdelkaDerevom(){
             <Header />
             <First_section data={frstData}/>
             <C1 data={DerevoTypesData}/>
+            <Title title={"Примеры работ"} />
+            <G1 data={data1} />
             <Call/>
             <Footer/>
         </div>
