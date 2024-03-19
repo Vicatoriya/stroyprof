@@ -15,28 +15,8 @@ import Title from "../../Title/Title";
 //     ['Значение 10.1', 'Значение 10.2', 'Значение 1.2']
 // ];
 
-const Price = () => {
-    const [PriceData,setPriceData] = useState([]);
-    useEffect(()=>{
-        const fetchData = async()=>{
-            try{
-                const response = await fetch('Krovla_array.json');
-                if(!response.ok){
-                    throw new Error('Ошибка при загрузке файла');
-                }
-                const jsonData = await response.json();
-                const extractedData = jsonData[0].prices.map(price=>({
-                    name: price.name,
-                    cost: price.cost,
-                    metrics: price.metrics
-                }));
-                setPriceData(extractedData);
-            }catch (error){
-                console.error('ошибка при загрузке и обработке данных', error);
-            }
-        }
-        fetchData();
-    },[]);
+const Price = ({PriceData}) => {
+
     return(
         <div className={'price'} >
             <Title title={"Прайс"}/>

@@ -59,7 +59,6 @@ import Vid_Krovli from "../Components/Additional_Pager/Vid_krovli/Vid_Krovli";
 import data2 from "./data/forKrov/DataForG2krov";
 import data1 from "./data/forKrov/Examples";
 import Footer from '../Components/Footer/Footer';
-// import data from "./data/ex.json";
 const Krovla = () => {
     const [frstData, setData] = useState([]);
 
@@ -99,6 +98,27 @@ const Krovla = () => {
         }
         fetchData();
     },[]);
+    const [PriceData,setPriceData] = useState([]);
+    useEffect(()=>{
+        const fetchData = async()=>{
+            try{
+                const response = await fetch('Krovla_array.json');
+                if(!response.ok){
+                    throw new Error('Ошибка при загрузке файла');
+                }
+                const jsonData = await response.json();
+                const extractedData = jsonData[0].prices.map(price=>({
+                    name: price.name,
+                    cost: price.cost,
+                    metrics: price.metrics
+                }));
+                setPriceData(extractedData);
+            }catch (error){
+                console.error('ошибка при загрузке и обработке данных', error);
+            }
+        }
+        fetchData();
+    },[]);
     return (
         <div>
             <Upsite />
@@ -106,7 +126,7 @@ const Krovla = () => {
             <First_section data={frstData}/>
             <C1 data={CoverTypesData}/>
             <Vid_Krovli />
-            <Price />
+            <Price PriceData={PriceData}/>
             <Title title={"Примеры работ"} />
             <G1 data={data1} />
             <G2 data={data2} />

@@ -9,8 +9,9 @@ export default function First_section({data}){
     <img className='photo' src={MyImage}></img>
         <div>
             <h1 className='text'>{data.title}</h1>
-            <p className='text'>{data.frst}{/*Кровельные работы - обязательный вид работ при строительстве, капитальном ремонте, реконструкции здания.*/}</p>
-            <p className='text'>{data.sec}{/*Они придусматривают устройство крыши с покрытмем из листовых, штучных, рулонных, мастичных материалов.*/}</p>
+            <p className='text'>{data.frst}</p>
+            <p className='text'>{data.sec}</p>
+            <p className='text'>{data.thr}</p>
         </div>
 </div>)
 }
