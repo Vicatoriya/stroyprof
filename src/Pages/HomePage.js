@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import "../index.css";
 import Header from "../Components/Header/Header";
 import Upsite from "../Components/Upsite/Upsite";
@@ -11,6 +12,21 @@ import Main_sec3 from "../Components/Main_sec3/Main_sec3";
 import Footer from "../Components/Footer/Footer";
 
 const HomePage = () =>  {
+    const location = useLocation();
+
+    useEffect(() => {
+        // Обработка параметров запроса и прокрутка к якорю
+        const { search } = location;
+        const params = new URLSearchParams(search);
+        const section = params.get('h2');
+
+        if (section) {
+            const targetElement = document.getElementById(section);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
     return(
         <>
             <Upsite/>
