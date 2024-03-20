@@ -1,7 +1,7 @@
 .about_sec{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 .about_pic{
     width: 27%;

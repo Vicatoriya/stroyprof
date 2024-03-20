@@ -6,7 +6,7 @@ export default function Select({text,name}){
     return(
         <>
         <label htmlFor={name}>{text}</label>
-        <select name={name} style={{width:"40%"}} id={name} className="control">
+        <select name={name} id={name} className="control">
             <option value="">Выберите подходящий вариант</option>
             {name=="form" &&
             <>

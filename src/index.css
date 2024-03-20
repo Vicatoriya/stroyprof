@@ -25,3 +25,14 @@ h3{
 	font-size: 18px;
 	font-family: 'Play regular';
 }
+
+@media (max-width: 800px){
+    .main_text .text_title h2{
+        font-size: 15px;
+		line-height: 100%;
+		margin-bottom: 2px;
+    }
+	.main_text .text_title{
+		margin-bottom: 0;
+	}
+}

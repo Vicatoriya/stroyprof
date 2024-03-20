@@ -29,10 +29,10 @@ const HomePage = () =>  {
     }, [location]);
     return(
         <>
-            <Upsite/>
+            {/* <Upsite/> */}
             <Header/>
             <Main_sec1/>
-            <Title  id="calc" title="Расчет кровли"/>
+            <Title id="calc" title="Расчет кровли"/>
             <Main_sec2 />
             <Title id="work_types"title="Виды работ"/>
             <Links/>

@@ -10,11 +10,13 @@
     font-size: 23px;
     padding-top: 50px;
 }
+
 .input{
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.8rem;
     width: 25%;
+    min-width: 300px;
     margin-top: 5px;
 }
 
@@ -29,3 +31,13 @@
     color: white;
     border-radius: 6px;
 }
+
+@media (max-width: 700px){
+    .call{
+     font-size: 18px;
+    }
+    .call_button{
+        font-size: 15px;
+        line-height: 2.5rem;
+    }
+ }

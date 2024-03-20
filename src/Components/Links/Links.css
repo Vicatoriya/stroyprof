@@ -1,15 +1,18 @@
 .cont{
     display: flex;
+    flex-direction: row;
     margin: 0 10% 70px 10%;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .pic{
     width: 25%;
     min-width: 200px;
     position: relative;
     height: fit-content;
     align-content: center;
+    margin: auto;
 }
 
 .pic img{
@@ -30,10 +33,17 @@
     color: white;
     font-size: 19px;
 }
-
 .upper_text h3{
     word-wrap:break-word;
     max-width: 80%;
     margin: auto;
     font-size: 24px;
+}
+@media (max-width: 700px){
+    .pic a {
+        font-size: 15px;
+    }
+    .upper_text h3{
+        font-size: 18px;
+    }
 }

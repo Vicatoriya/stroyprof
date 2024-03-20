@@ -10,6 +10,7 @@
     bottom: 30%;
     text-align: center;
     margin-left: 5%;
+    
 }
 .box{
     position: relative;
@@ -19,12 +20,26 @@
     margin-bottom: 10px;
 }
 
-.main_text p{
+
+.main_text ul{
+    list-style-type: none;
+    padding: 0 0 0 0;
+}
+.main_text li{
     text-align: left;
     font-size: 23px;
     margin-top: 5px;
 }
 
+
 .text_title{
     margin-bottom: 30px;
+}
+@media (max-width: 800px){
+    .main_text ul li{
+        font-size: 13px;
+    }
+    .main_text{
+        bottom: 5%;
+    }
 }

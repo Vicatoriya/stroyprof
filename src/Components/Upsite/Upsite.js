@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import './Upsite.css';
 import '../../index.css'
-import logo from "../../pics/logo.png"
+import logo from "../../pics/logo.jpg"
 
 const Upsite = () => {
 
     return (
         <div className='upsite'>
             <div className = "upsite_content">
-                <p>STROYPROF</p>
+                <img src={logo}></img>
                 <div className='together'>
                     <p>+375298688955</p>
                     <p>Belarus, Minsk</p>
