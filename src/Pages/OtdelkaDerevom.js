@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import First_section from "../Components/First_section/First_section";
-import Upsite from "../Components/Upsite/Upsite";
 import Header from "../Components/Header/Header";
+import Navigation from "../Components/Navigation/Navigation";
 import C1 from "../Components/Additional_Pager/vidi_mater/vidi_mater";
 import Footer from "../Components/Footer/Footer";
 import Call from "../Components/Call/Call";
@@ -49,8 +49,8 @@ export default function OtdelkaDerevom(){
     },[]);
     return(
         <div>
-            <Upsite />
-            <Header />
+            <Header/>
+            <Navigation/>
             <First_section data={frstData}/>
             <C1 data={DerevoTypesData}/>
             <Title title={"Примеры работ"} />

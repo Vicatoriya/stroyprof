@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import Upsite from "../Components/Upsite/Upsite";
 import Header from "../Components/Header/Header";
+import Navigation from "../Components/Navigation/Navigation";
 import First_section from "../Components/First_section/First_section";
 import Footer from "../Components/Footer/Footer";
 import Call from "../Components/Call/Call";
@@ -31,8 +31,8 @@ export default function OtdelkaParilok(){
 
     return(
         <div className={"remont"}>
-            <Upsite/>
             <Header/>
+            <Navigation/>
             <First_section data={frstData}/>
 
             <Title title={"Примеры работ"} />

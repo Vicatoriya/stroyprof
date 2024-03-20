@@ -6,10 +6,10 @@ import emailjs from "@emailjs/browser"
 export default function Call(){
     const form = useRef();
     const sendEmail = (e) => {
-    //     e.preventDefault();
-    //     emailjs
-    //       .sendForm('service_bcbbiwk', 'template_knb9jcj', form.current, {
-    //         publicKey: 'IgseQxdVOTCsugiKI',});
+        e.preventDefault();
+        emailjs
+          .sendForm('service_bcbbiwk', 'template_knb9jcj', form.current, {
+            publicKey: 'IgseQxdVOTCsugiKI',});
     };
     return(
         <form id="call" ref={form} onSubmit={sendEmail} className="call_sec">

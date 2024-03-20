@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Price from "../Components/Additional_Pager/Price/Price";
-import Upsite from "../Components/Upsite/Upsite";
 import Header from "../Components/Header/Header";
+import Navigation from "../Components/Navigation/Navigation";
 import First_section from "../Components/First_section/First_section";
 import Footer from "../Components/Footer/Footer";
 import Call from "../Components/Call/Call";
@@ -47,8 +47,8 @@ export default function Electrics(){
     }, []);
     return(
         <>
-            <Upsite/>
             <Header/>
+            <Navigation/>
             <First_section data={frstData}/>
             <Price PriceData={PriceData}/>
             <Call/>

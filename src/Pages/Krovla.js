@@ -47,8 +47,8 @@
 // export default Krovla;
 /// Компонент Krovla
 import React, { useEffect, useState } from 'react';
-import Upsite from "../Components/Upsite/Upsite";
 import Header from "../Components/Header/Header";
+import Navigation from "../Components/Navigation/Navigation";
 import C1 from "../Components/Additional_Pager/vidi_mater/vidi_mater";
 import Price from "../Components/Additional_Pager/Price/Price";
 import G1 from "../Components/Additional_Pager/Galleries/Gallery1/G1";
@@ -121,8 +121,8 @@ const Krovla = () => {
     },[]);
     return (
         <div>
-            <Upsite />
             <Header />
+            <Navigation/>
             <First_section data={frstData}/>
             <C1 data={CoverTypesData}/>
             <Vid_Krovli />

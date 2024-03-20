@@ -1,18 +1,23 @@
 import React from 'react';
+import styled from 'styled-components';
 import './Header.css';
 import '../../index.css'
-import { Link } from 'react-router-dom';
+import logo from "../../pics/logo.jpg"
+import line from "../../pics/line.png"
 
-const Header = () => {
+const Upsite = () => {
+
     return (
-        <header>
-            <a href="#main">Главная</a>
-            <a href="#calc">Расчет кровли</a>
-            <a href="#work_types">Виды работ</a>
-            <a href="#call">Заказать звонок</a>
-            <a href="#about_us">О нас</a>
-            <a href="#contacts">Контакты</a>
-        </header>
+        <div className='upsite'>
+            <div className = "upsite_content">
+                <img src={logo}></img>
+                <div className='together'>
+                    <p>+375298688955</p>
+                    <p>Belarus, Minsk</p>
+                </div>
+            </div>
+            <img id="upsite_line" src={line}></img>
+        </div>
     );
 };
-export default Header;
+export default Upsite;

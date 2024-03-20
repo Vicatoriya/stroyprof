@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import "../index.css";
+import Navigation from "../Components/Navigation/Navigation";
 import Header from "../Components/Header/Header";
-import Upsite from "../Components/Upsite/Upsite";
 import Title from "../Components/Title/Title";
 import Main_sec2 from "../Components/Main_sec2/Main_sec2";
 import Call from "../Components/Call/Call";
@@ -28,9 +28,9 @@ const HomePage = () =>  {
         }
     }, [location]);
     return(
-        <>
-            {/* <Upsite/> */}
+        <> 
             <Header/>
+            <Navigation/>
             <Main_sec1/>
             <Title id="calc" title="Расчет кровли"/>
             <Main_sec2 />
