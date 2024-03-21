@@ -7,13 +7,8 @@
     flex-direction: row;    
     padding-top: 12px;
     font-family: 'Play bold';
-
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
 }
 .first_section h1{
-    /* font: 'Play bold'; */
-    /* font-weight: bold; */
     font-size: 60px;
 }
 .first_section .text{
@@ -27,6 +22,16 @@
     font-size: 30px;
 }
 
-/* h3{
-    font-size: 27px;    
-} */
+@media screen and (max-width: 800px) {
+    .first_section p{
+        font-size: 15px;
+    }
+    .first_section h1{
+        font-size: 25px;
+    }
+    .photo{
+        width: 45%;
+        height: 45%;
+        margin-left: 10px;
+    }
+}

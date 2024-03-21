@@ -1,5 +1,4 @@
 .bckgr1{
-    /*width: 400px;*/
     height: 750px;
     position: absolute;
     z-index: -1;
@@ -14,10 +13,7 @@
 }
 .par{
     width: 550px;
-    /*margin-left: 14px;*/
     padding-bottom: 4px;
-    /*letter-spacing: 0.025em;*/
-    /*word-spacing: 0.25em;*/
 }
 .peaceOfText{
     margin-bottom: 20px;
@@ -30,4 +26,30 @@
     /*text-align: center;*/
     margin:30px 0 30px 0;
     font-size: 38px;
+}
+@media screen and (max-width: 800px){
+    .unit{
+        width: 800px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .n{
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+    .unit h1{
+        font-size: 25px;
+    }
+    .questTitle{
+        font-size: 30px;
+    }
+    .par{
+        width: 370px;
+    }
+    .bckgr1{
+        height: 900px;
+    }
 }
