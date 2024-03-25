@@ -4,19 +4,19 @@
     [
       {
         "name":"Планкен",
-        "pic": "materials_roof/5.png"
+        "pic": "otdelkaDerevomPhotos/Planken-kasoy-5.jpg"
       },
       {
         "name":"Вагонка",
-        "pic": "materials_roof/2.png"
+        "pic": "otdelkaDerevomPhotos/vagonka.jpg"
       },
       {
         "name":"Имитация бруса",
-        "pic": "materials_roof/9.jpeg"
+        "pic": "otdelkaDerevomPhotos/imitacia_brysa_foto_03.jpg"
       },
       {
         "name":"Блокхаус",
-        "pic": "materials_roof/8.png"
+        "pic": "otdelkaDerevomPhotos/41-2.jpg"
       }
     ]
   }
