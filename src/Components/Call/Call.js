@@ -9,6 +9,7 @@ export default function Call(){
     const [phoneDirty,setPhoneDirty]=useState(false);
     const [incorrectPhone,setIncorrectPhone]=useState("Некорректный номер телефона");
     const [formValid,setFormValid]=useState(false);
+    const [clicked,setClicked]=useState(false);
  
     const phoneHandler=(e)=>{
         setPhone(e.target.value);
@@ -17,6 +18,10 @@ export default function Call(){
         else{
             setIncorrectPhone("");
         }
+    }
+    const clickHadler=(e)=>{
+        setPhone("");
+        setClicked(true);
     }
 
     const blurHandler=(e)=>{
@@ -33,16 +38,17 @@ export default function Call(){
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs
-          .sendForm('service_bcbbiwk', 'template_knb9jcj', form.current, {
-            publicKey: 'IgseQxdVOTCsugiKI',});
-    };
+        // emailjs
+        //   .sendForm('service_bcbbiwk', 'template_knb9jcj', form.current, {
+        //     publicKey: 'IgseQxdVOTCsugiKI',});
+    }
     return(
         <form id="call" ref={form} onSubmit={sendEmail} className="call_sec">
             <p className="call">Заказать звонок специалиста</p>
             <input onChange={e=>phoneHandler(e)} value={phone} onBlur={e=>blurHandler(e)} type="text" name="phone" className="input"></input>
             {(phoneDirty && incorrectPhone) && <div style={{color:'red'}}>{incorrectPhone}</div>}
-            <button disabled={!formValid} className="call_button" type="submit">Отправить запрос</button> 
+            <button onClick={e=>clickHadler(e)} disabled={!formValid} className="call_button" type="submit">Отправить запрос</button> 
+            {clicked && <div style={{position:"relative",bottom:"10%",color:"white"}}>Данные успешно отправлены!</div>}
         </form>
     )
 }
