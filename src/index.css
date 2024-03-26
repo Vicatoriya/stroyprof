@@ -2,8 +2,6 @@
 	font-family: 'Play bold'; 
 	src: url(./fonts/Play-Bold.ttf); 
 }
-/* Обычный */
-/* Жирный */
 @font-face {
 	font-family: 'Play regular'; 
 	src: url(./fonts/Play-Regular.ttf); 
