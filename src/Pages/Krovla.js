@@ -120,18 +120,19 @@ const Krovla = () => {
         fetchData();
     },[]);
     return (
-        <div>
+        <>
             <Header />
             <Navigation/>
             <First_section data={frstData}/>
             <C1 data={CoverTypesData}/>
             <Vid_Krovli />
+            <h1></h1>
             <Price PriceData={PriceData}/>
             <Title title={"Примеры работ"} />
             <G1 data={data1} />
             <G2 data={data2} />
             <Footer></Footer>
-        </div>
+            </>
     );
 };
 
