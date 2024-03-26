@@ -57,7 +57,6 @@ export default function OtdelkaVagonkoy(){
             <Title title={"Примеры работ"} />
             <G1 data={data1}/>
             <Price PriceData={PriceData}/>
-            <Call/>
             <Footer/>
         </>
     )

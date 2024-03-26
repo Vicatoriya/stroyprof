@@ -30,7 +30,6 @@ export default function WoodHouse(){
         <Navigation/>
         <First_section data={frstData}/>
         <h1></h1>
-        <Call/>
         <Footer/>
     </div>
 )}

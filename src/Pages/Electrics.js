@@ -51,7 +51,6 @@ export default function Electrics(){
             <Navigation/>
             <First_section data={frstData}/>
             <Price PriceData={PriceData}/>
-            <Call/>
             <Footer/>
         </>
     )

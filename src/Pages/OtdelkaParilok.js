@@ -37,7 +37,6 @@ export default function OtdelkaParilok(){
 
             <Title title={"Примеры работ"} />
             <G1 data={data1}/>
-            <Call/>
             <Footer/>
         </div>
     )

@@ -55,7 +55,6 @@ export default function OtdelkaDerevom(){
             <C1 data={DerevoTypesData}/>
             <Title title={"Примеры работ"} />
             <G1 data={data1} />
-            <Call/>
             <Footer/>
         </div>
     )
