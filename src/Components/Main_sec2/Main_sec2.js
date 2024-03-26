@@ -36,9 +36,9 @@ export default function Main_sec2(){
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs
-          .sendForm('service_bcbbiwk', 'template_gyr3pxs', form.current, {
-            publicKey: 'IgseQxdVOTCsugiKI',});
+        // emailjs
+        //   .sendForm('service_bcbbiwk', 'template_gyr3pxs', form.current, {
+        //     publicKey: 'IgseQxdVOTCsugiKI',});
     };
     return(
         <form ref={form} onSubmit={sendEmail} className="form">

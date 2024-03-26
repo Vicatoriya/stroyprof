@@ -35,9 +35,7 @@ h3{
 	}
 
 }
-button:hover{
-	border: 2px solid white;
-}
+
 button:disabled{
 	cursor: not-allowed;
 }
