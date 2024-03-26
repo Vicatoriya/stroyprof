@@ -3,6 +3,7 @@ import "../../index.css";
 import "./Enter.css"
 
 export default function Enter({text,name}){
+    
     return(
         <>
         <label htmlFor={name}>{text}</label>
@@ -10,3 +11,4 @@ export default function Enter({text,name}){
         </>
     )
 }
+
