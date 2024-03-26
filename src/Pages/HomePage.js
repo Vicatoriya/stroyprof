@@ -28,7 +28,7 @@ const HomePage = () =>  {
         }
     }, [location]);
     return(
-        <> 
+        <div id="main_page"> 
             <Header/>
             <Navigation/>
             <Main_sec1/>
@@ -40,7 +40,7 @@ const HomePage = () =>  {
             <Title id="about_us" title="О нас"></Title>
             <Main_sec3/>
             <Footer/>
-        </>
+        </div>
     )
 }
 export default HomePage;
