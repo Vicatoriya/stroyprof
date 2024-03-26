@@ -9,6 +9,7 @@ import RemontKrovli from "./Pages/RemontKrovli";
 import Electrics from "./Pages/Electrics";
 import WoodHouse from "./Pages/WoodHouse";
 import "./Pages/Remont.css";
+import Santex from "./Pages/santex";
 export default function App() {
     return (
         <Router>
@@ -20,7 +21,8 @@ export default function App() {
                 <Route path="/steam_rooms" element={<OtdelkaParilok/>} />
                 <Route path="/roof_repair" element={<RemontKrovli/>} />
                 <Route path="/wood_houses" element={<WoodHouse/>} />
-                <Route path="/Electrics" element={<Electrics/>} />
+                <Route path="/electrics" element={<Electrics/>} />
+                <Route path="/plumbing" element={<Santex/>} />
             </Routes>
         </Router>
     );
