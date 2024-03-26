@@ -1,6 +1,6 @@
 import React from "react";
 import "../../index.css";
-import "../Enter/Enter.css"
+import "../Main_sec2/Main_sec2"
 
 export default function Select({text,name}){
     return(
