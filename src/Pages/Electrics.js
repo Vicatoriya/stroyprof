@@ -5,46 +5,20 @@ import Navigation from "../Components/Navigation/Navigation";
 import First_section from "../Components/First_section/First_section";
 import Footer from "../Components/Footer/Footer";
 import Call from "../Components/Call/Call";
+import info from "../local_json/ParilkiInfo.json";
+import elec from "../local_json/frstsectElectrics.json";
 export default function Electrics(){
+
     const [PriceData,setPriceData] = useState([]);
     useEffect(()=>{
-        const fetchData = async()=>{
-            try{
-                const response = await fetch('ParilkiInfo.json');
-                if(!response.ok){
-                    throw new Error('Ошибка при загрузке файла');
-                }
-                const jsonData = await response.json();
-                const extractedData = jsonData[0].prices.map(price=>({
-                    name: price.name,
-                    cost: price.cost,
-                    metrics: price.metrics
-                }));
-                setPriceData(extractedData);
-            }catch (error){
-                console.error('ошибка при загрузке и обработке данных', error);
-            }
-        }
-        fetchData();
+        setPriceData(info[0].prices);
     },[]);
+
     const [frstData, setData] = useState([]);
-
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('frstsectElectrics.json');
-                if (!response.ok) {
-                    throw new Error('Ошибка при загрузке файла');
-                }
-                const jsonData = await response.json();
-                setData(jsonData[0]);
-            } catch (error) {
-                console.error('ошибка при загрузке и обработке данных', error);
-            }
-        };
-
-        fetchData();
+       setData(elec[0].frst);
     }, []);
+
     return(
         <>
             <Header/>

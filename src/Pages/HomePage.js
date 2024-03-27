@@ -13,7 +13,6 @@ import Footer from "../Components/Footer/Footer";
 
 const HomePage = () =>  {
     const location = useLocation();
-
     useEffect(() => {
         // Обработка параметров запроса и прокрутка к якорю
         const { search } = location;
@@ -27,6 +26,7 @@ const HomePage = () =>  {
             }
         }
     }, [location]);
+
     return(
         <div id="main_page"> 
             <Header/>

@@ -1,27 +1,13 @@
 import React, {useEffect, useState} from "react";
 import Paragraph from "./Text_Paragraph";
 import "./Vid_Krovli.css";
+import form_type from "../../../local_json/Krovla_Array.json";
 const Vid_Krovli = () =>{//RoofTypeData
-    const [RoofTypeData,setPriceData] = useState([]);
+
+    const [RoofTypeData,setFormType] = useState([]);
     useEffect(()=>{
-        const fetchData = async()=>{
-            try{
-                const response = await fetch('Krovla_array.json');
-                if(!response.ok){
-                    throw new Error('Ошибка при загрузке файла');
-                }
-                const jsonData = await response.json();
-                const extractedData = jsonData[0].form_types.map(type=>({
-                    title: type.title,
-                    paragraph: type.paragraph,
-                }));
-                setPriceData(extractedData);
-            }catch (error){
-                console.error('ошибка при загрузке и обработке данных', error);
-            }
-        }
-        fetchData();
-    },[]);
+            setFormType(form_type[0].form_types);
+        },[]);
 
     return(
         <div className={"n"}>

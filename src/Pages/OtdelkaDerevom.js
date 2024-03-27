@@ -8,44 +8,19 @@ import Call from "../Components/Call/Call";
 import Title from "../Components/Title/Title";
 import G1 from "../Components/Additional_Pager/Galleries/Gallery1/G1";
 import data1 from "./data/forDerev/DataForG1derevo";
+import derevData from "../local_json/frstsectDerevData.json";
+import dd from "../local_json/Derevo_Array.json";
+
 export default function OtdelkaDerevom(){
     const [frstData, setData] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('frstsectDerevData.json');
-                if (!response.ok) {
-                    throw new Error('Ошибка при загрузке файла');
-                }
-                const jsonData = await response.json();
-                setData(jsonData[0]);
-            } catch (error) {
-                console.error('ошибка при загрузке и обработке данных', error);
-            }
-        };
-
-        fetchData();
+       setData(derevData[0].first);
     }, []);
+
     const [DerevoTypesData,setCoverTypesData] = useState([]);
     useEffect(()=> {
-        const fetchData = async () => {
-            try{
-                const response =await fetch('Derevo_Array.json');
-                if (!response.ok) {
-                    throw new Error('Ошибка при загрузке файла');
-                }
-                const jsonData = await response.json();
-                const extractedData = jsonData[0].derevo_types.map(derevoType => ({
-                    name: derevoType.name,
-                    pic: derevoType.pic
-                }));
-                setCoverTypesData(extractedData);
-            } catch (error){
-                console.error('ошибка при загрузке и обработке данных',error);
-            }
-        }
-        fetchData();
+                setCoverTypesData(dd[0].derevo_types);
     },[]);
     return(
         <div>
