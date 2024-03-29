@@ -18,8 +18,17 @@ th,.exception {
 .price{
     display: flex;
     flex-direction: column;
-}
-.price{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     margin-bottom: 60px;
     align-items: center;
+}
+@media screen and (max-width: 800px){
+    .price{
+        font-size: 11px;
+
+    }
+    th{
+        font-size: 15px;
+    }
 }

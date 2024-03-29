@@ -43,6 +43,7 @@ const Krovla = () => {
             <Price PriceData={PricesData}/>
             <Title title={"Примеры работ"} />
             <G1 data={data1} />
+            <Title title={"Примеры работ"} />
             <G2 data={data2} />
             <Footer></Footer>
         </>

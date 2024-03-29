@@ -25,10 +25,10 @@
 
 @media screen and (max-width: 800px) {
     .first_section p{
-        font-size: 15px;
+        font-size: 14px;
     }
     .first_section h1{
-        font-size: 25px;
+        font-size: 23px;
     }
     .photo{
         width: 45%;
