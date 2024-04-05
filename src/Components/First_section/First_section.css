@@ -1,20 +1,22 @@
 .photo{
-    width: 45%;
-    max-height: 600px;
+    width: 35%;
+    max-height: 500px;
     margin-left: 100px;
+    border-radius: 20px;
 }
 .first_section{
     display: flex;
     flex-direction: row;    
     padding-top: 12px;
     font-family: 'Play bold';
+    justify-items: center;
 }
 .first_section h1{
     font-size: 60px;
 }
 .first_section .text{
     margin-right: 12%;
-    margin-left: 15%;
+    margin-left: 10%;
     padding-bottom: 30px;
     
     word-wrap: break-word;
@@ -28,7 +30,7 @@
         font-size: 14px;
     }
     .first_section h1{
-        font-size: 23px;
+        font-size: 22px;
     }
     .photo{
         width: 45%;
