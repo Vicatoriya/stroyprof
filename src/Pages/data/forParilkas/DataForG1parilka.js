@@ -1,5 +1,12 @@
 const data1 = [
     {
+        image: "parilkiPhoto/6.jpg",
+        caption: ""
+    },{
+        image: "parilkiPhoto/7.jpg",
+        caption: ""
+    },
+    {
         image: "parilkiPhoto/1.jpg",
         caption: ""
     },

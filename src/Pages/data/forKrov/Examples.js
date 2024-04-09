@@ -22,6 +22,22 @@ const data1 = [
       {
         image: "examples/6_1.jpg",
         caption: ""
+      },
+      {
+        image: "examples/7_1.jpg",
+        caption: ""
+      },
+      {
+        image: "examples/8_1.jpg",
+        caption: ""
+      },
+      {
+        image: "examples/9_1.jpg",
+        caption: ""
+      },
+      {
+        image: "examples/10_1.jpg",
+        caption: ""
       }
     ];
 
