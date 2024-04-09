@@ -16,12 +16,7 @@
     font-size: 30px;
 }
 
-@media (max-width: 700px){
-    .sent_text h2{
-        font-size: 18px;
-        line-height: 1.8rem;
-    }
-}
+
  
 .sent_text a{
     text-decoration: none;
@@ -34,4 +29,15 @@
     background-color: #bd6a26;
     color: white;
     border-radius: 6px;
+}
+
+@media (max-width: 700px){
+    .sent_text h2{
+        font-size: 20px;
+        line-height: 1.8rem;
+    }
+
+    .sent_text a{
+        font-size: 16px;
+    }
 }

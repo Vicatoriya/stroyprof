@@ -80,7 +80,7 @@ export default function Main_sec2(){
           {formValid && <a onClick={e=>HandleClick(e)} type="submit"  href="\form_sent">Рассчитать</a>}
           {!formValid && <a onClick={e=>HandleClick(e)} className="a_disabled" type="submit"  href="\form_sent">Рассчитать</a>}
           {clicked && <div style={{color:"white",margin:"0 auto 10px auto"}}>Данные успешно отправлены!</div>}
-          <div style={{color:"white",margin:"0 auto 10px auto"}}>Заполните все поля формы перед отправкой!</div>
+          <div style={{color:"white",margin:"0 auto 10px auto"}}>Заполните все поля формы!</div>
         </form>
     )
 }
