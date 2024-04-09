@@ -10,18 +10,6 @@
     max-height: 490px;
 }
 
-button{
-    width: fit-content;
-    margin: auto;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    line-height: 3rem;
-    font-size: 17px;
-    padding:0 5% 0 5%;
-    background-color: #bd6a26;
-    color: white;
-    border-radius: 6px;
-}
 @media (max-width: 700px){
     .form {
         max-height: max-content;
@@ -49,4 +37,22 @@ label{
         width: 85%;;
     }
 
+}
+
+.form a{
+    text-decoration: none;
+    color:white;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 3rem;
+    font-size: 17px;
+    padding:0 5% 0 5%;
+    background-color: #bd6a26;
+    color: white;
+    border-radius: 6px;
+}
+.a_disabled{
+	cursor: not-allowed;
+	pointer-events: none;
 }

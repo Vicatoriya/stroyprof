@@ -9,7 +9,7 @@ import RemontKrovli from "./Pages/RemontKrovli";
 import Electrics from "./Pages/Electrics";
 import WoodHouse from "./Pages/WoodHouse";
 import "./Pages/Remont.css";
-import Santex from "./Pages/Santex";
+import Santex from "./Pages/santex";
 export default function App() {
     return (
         <Router>

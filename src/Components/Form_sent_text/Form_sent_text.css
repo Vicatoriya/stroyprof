@@ -1,0 +1,43 @@
+.sent_text{
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.sent_text h2{
+    text-align: center;
+    width: fit-content;
+    font-weight: normal;
+    line-height: 3rem;
+    font-size: 30px;
+}
+
+
+ 
+.sent_text a{
+    text-decoration: none;
+    color:white;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 3rem;
+    font-size: 17px;
+    padding:0 5% 0 5%;
+    background-color: #bd6a26;
+    color: white;
+    border-radius: 6px;
+}
+
+@media (max-width: 700px){
+    .sent_text h2{
+        font-size: 20px;
+        line-height: 1.8rem;
+    }
+
+    .sent_text a{
+        font-size: 16px;
+    }
+}
