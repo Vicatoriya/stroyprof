@@ -8,18 +8,6 @@ const data1 = [
         caption: ""
     },
     {
-        image: "karkasHouse/3.jpg",
-        caption: ""
-    },
-    {
-        image: "karkasHouse/4.jpg",
-        caption: ""
-    },
-    {
-        image: "karkasHouse/5.jpg",
-        caption: ""
-    },
-    {
         image: "karkasHouse/6.jpg",
         caption: ""
     }

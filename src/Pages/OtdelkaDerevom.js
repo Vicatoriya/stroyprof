@@ -29,7 +29,7 @@ export default function OtdelkaDerevom(){
             <First_section data={frstData}/>
             <C1 data={DerevoTypesData}/>
             <Title title={"Примеры работ"} />
-            <G1 data={data1} />
+            {/*<G1 data={data1} />*/}
             <Footer/>
         </div>
     )
