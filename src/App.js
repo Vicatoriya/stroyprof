@@ -10,6 +10,7 @@ import Electrics from "./Pages/Electrics";
 import WoodHouse from "./Pages/WoodHouse";
 import "./Pages/Remont.css";
 import Santex from "./Pages/santex";
+import Form_sent from "./Pages/Form_sent";
 export default function App() {
     return (
         <Router>
@@ -23,6 +24,7 @@ export default function App() {
                 <Route path="/wood_houses" element={<WoodHouse/>} />
                 <Route path="/electrics" element={<Electrics/>} />
                 <Route path="/plumbing" element={<Santex/>} />
+                <Route path="/form_sent" element={<Form_sent/>} />
             </Routes>
         </Router>
     );
