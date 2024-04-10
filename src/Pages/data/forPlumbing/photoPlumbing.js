@@ -13,10 +13,6 @@ const data1 = [
     {
         image: "plumbingPhoto/4.jpg",
         caption: ""
-    },
-    {
-        image: "plumbingPhoto/5.jpg",
-        caption: ""
     }
 ];
 
