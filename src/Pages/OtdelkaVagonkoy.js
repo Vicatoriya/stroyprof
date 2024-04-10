@@ -30,6 +30,7 @@ export default function OtdelkaVagonkoy(){
             <First_section data={frstData}/>
             <Title title={"Примеры работ"} />
             <G1 data={data1}/>
+            {/*<G1 data={data1}/>*/}
             <Price PriceData={PriceData}/>
             <Footer/>
         </>

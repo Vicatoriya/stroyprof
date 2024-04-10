@@ -6,7 +6,7 @@ const data1 = [
     {
         image: "vagonkaPhoto/2.jpg",
         caption: ""
-    },,
+    },
     {
         image: "vagonkaPhoto/3.jpg",
         caption: ""
@@ -17,10 +17,6 @@ const data1 = [
     },
     {
         image: "vagonkaPhoto/5.jpg",
-        caption: ""
-    },
-    {
-        image: "vagonkaPhoto/6.jpg",
         caption: ""
     }
 ];
