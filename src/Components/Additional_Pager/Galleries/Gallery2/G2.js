@@ -5,8 +5,15 @@ const G2 = ({data}) => {
     const [slideIndex, setSlideIndex] = useState(0);
 
     function plusSlides(n) {
-        showSlides(slideIndex + n);
+        let newIndex = slideIndex + n;
+        if (newIndex < 0) {
+            newIndex = data.length - 1;
+        } else if (newIndex >= data.length) {
+            newIndex = 0;
+        }
+        showSlides(newIndex);
     }
+
 
     function currentSlide(n) {
         showSlides(n - 1);

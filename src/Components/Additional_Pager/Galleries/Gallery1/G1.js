@@ -1,5 +1,4 @@
 import {Carousel} from 'react-carousel-minimal';
-import "./G1.css"
 const captionStyle={
     fontSize: '2em',
     fontWeight: 'bold',
@@ -11,7 +10,7 @@ const slideNumberStyle = {
 const G1 = ({data})=>{
     return(
         <Carousel
-            className={"carousell"}
+            className={"carousell1"}
             data={data}
             time={20000}
             width="850px"                                                                                                                                                                               c
