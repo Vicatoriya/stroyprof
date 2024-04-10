@@ -34,10 +34,6 @@ const data1 = [
       {
         image: "examples/9_1.jpg",
         caption: ""
-      },
-      {
-        image: "examples/10_1.jpg",
-        caption: ""
       }
     ];
 
