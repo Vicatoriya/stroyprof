@@ -18,6 +18,13 @@ const data1 = [
     {
         image: "vagonkaPhoto/5.jpg",
         caption: ""
+    },
+    {
+        image: "vagonkaPhoto/6.jpg",
+        caption: ""
+    },{
+        image: "vagonkaPhoto/7.jpg",
+        caption: ""
     }
 ];
 
