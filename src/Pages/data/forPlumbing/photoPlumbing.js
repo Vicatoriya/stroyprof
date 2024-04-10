@@ -17,14 +17,6 @@ const data1 = [
     {
         image: "plumbingPhoto/5.jpg",
         caption: ""
-    },
-    {
-        image: "plumbingPhoto/6.jpg",
-        caption: ""
-    },
-    {
-        image: "plumbingPhoto/7.jpg",
-        caption: ""
     }
 ];
 
