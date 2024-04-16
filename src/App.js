@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import Krovla from "./Pages/Krovla";
 import OtdelkaDerevom from "./Pages/OtdelkaDerevom";
@@ -12,7 +12,7 @@ import "./Pages/Remont.css";
 import Santex from "./Pages/Santex";
 export default function App() {
     return (
-        <Router>
+        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/roof" element={<Krovla />} />
@@ -24,6 +24,6 @@ export default function App() {
                 <Route path="/electrics" element={<Electrics/>} />
                 <Route path="/plumbing" element={<Santex/>} />
             </Routes>
-        </Router>
+        </BrowserRouter>
     );
 }
