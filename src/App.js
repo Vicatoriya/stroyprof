@@ -8,6 +8,7 @@ import OtdelkaParilok from "./Pages/OtdelkaParilok";
 import RemontKrovli from "./Pages/RemontKrovli";
 import Electrics from "./Pages/Electrics";
 import WoodHouse from "./Pages/WoodHouse";
+import Form_sent from "./Pages/Form_sent"
 import "./Pages/Remont.css";
 import Santex from "./Pages/Santex";
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
                 <Route path="/wood_houses" element={<WoodHouse/>} />
                 <Route path="/electrics" element={<Electrics/>} />
                 <Route path="/plumbing" element={<Santex/>} />
+                <Route path="/form_sent" element={<Form_sent/>}/>
             </Routes>
         </BrowserRouter>
     );

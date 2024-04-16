@@ -43,6 +43,7 @@ export default function Main_sec2(){
     setName("");
     setPhone("");
     setClicked(true);
+    emailjs.sendForm('service_xx4kczk', 'template_hcbrf35', form.current,{publicKey:"VB9TxeuvGsQJ2WSTh"});
   }
 
   useEffect(()=>{
@@ -54,14 +55,8 @@ export default function Main_sec2(){
   },[incorrectPhone])
 
     const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
-        // emailjs
-        //   .sendForm('service_bcbbiwk', 'template_gyr3pxs', form.current, {
-        //     publicKey: 'IgseQxdVOTCsugiKI',});
-    };
     return(
-        <form ref={form} onSubmit={sendEmail} className="form">
+        <form ref={form} className="form">
           <Select name="form" text="Выберите форму крыши"></Select>
           <Select name="work" text="Виды работ" ></Select>
           <Select name="type" text="Вид покрытия"></Select>
@@ -78,7 +73,7 @@ export default function Main_sec2(){
           <label htmlFor="name">Ваше имя</label>
           <input onChange={e=>nameHandler(e)} value={name} type="text" name="name" id="name" className="control"></input>
           {formValid && <a onClick={e=>HandleClick(e)} type="submit"  href="\form_sent">Рассчитать</a>}
-          {!formValid && <a onClick={e=>HandleClick(e)} className="a_disabled" type="submit"  href="\form_sent">Рассчитать</a>}
+          {!formValid && <a onClick={e=>HandleClick(e)} className="a_disabled" type="submit" href="\form_sent">Рассчитать</a>}
           {clicked && <div style={{color:"white",margin:"0 auto 10px auto"}}>Данные успешно отправлены!</div>}
           <div style={{color:"white",margin:"0 auto 10px auto"}}>Заполните все поля формы!</div>
         </form>

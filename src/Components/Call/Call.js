@@ -22,6 +22,7 @@ export default function Call(){
     const clickHadler=(e)=>{
         setPhone("");
         setClicked(true);
+        emailjs.sendForm('service_xx4kczk', 'template_15sloo1', form.current,{publicKey:"VB9TxeuvGsQJ2WSTh"});
     }
 
     const blurHandler=(e)=>{
@@ -36,12 +37,6 @@ export default function Call(){
     },[incorrectPhone])
 
     const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
-        // emailjs
-        //   .sendForm('service_bcbbiwk', 'template_knb9jcj', form.current, {
-        //     publicKey: 'IgseQxdVOTCsugiKI',});
-    }
     return(
         <form id="call" ref={form} onSubmit={sendEmail} className="call_sec">
             <p className="call">Заказать звонок специалиста</p>
