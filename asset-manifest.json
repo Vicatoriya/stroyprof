@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/krov_deploy/static/css/main.4e709e86.css",
+    "main.js": "/krov_deploy/static/js/main.13ec56e8.js",
+    "static/media/back.png": "/krov_deploy/static/media/back.6563140ef56db1871c20.png",
+    "static/media/Play-Bold.ttf": "/krov_deploy/static/media/Play-Bold.b78f3be6adabf73cde7f.ttf",
+    "static/media/Play-Regular.ttf": "/krov_deploy/static/media/Play-Regular.e0424c5771f87080b05e.ttf",
+    "static/media/logo.jpg": "/krov_deploy/static/media/logo.cfe73a137a0739292062.jpg",
+    "static/media/about_us6.png": "/krov_deploy/static/media/about_us6.0a6a926cb99ab81f6823.png",
+    "static/media/about_us1.png": "/krov_deploy/static/media/about_us1.4a8772f1f784a8986e17.png",
+    "static/media/about_us2.png": "/krov_deploy/static/media/about_us2.4d0bb8ab908946046d0a.png",
+    "static/media/about_us4.png": "/krov_deploy/static/media/about_us4.72d6ed29eb6d1f5287c2.png",
+    "static/media/about_us3.png": "/krov_deploy/static/media/about_us3.33309025cb5713c2d14e.png",
+    "static/media/about_us5.png": "/krov_deploy/static/media/about_us5.72e6ab5233e6158e5b9a.png",
+    "index.html": "/krov_deploy/index.html",
+    "main.4e709e86.css.map": "/krov_deploy/static/css/main.4e709e86.css.map",
+    "main.13ec56e8.js.map": "/krov_deploy/static/js/main.13ec56e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e709e86.css",
+    "static/js/main.13ec56e8.js"
+  ]
+}
