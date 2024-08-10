@@ -24,7 +24,12 @@ export default function Call(){
         setClicked(true);
         emailjs.sendForm('service_xx4kczk', 'template_15sloo1', form.current,{publicKey:"VB9TxeuvGsQJ2WSTh"});
     }
-
+    const sendEmail = (e) => {
+        e.preventDefault();
+        // emailjs
+        //   .sendForm('service_bcbbiwk', 'template_knb9jcj', form.current, {
+        //     publicKey: 'IgseQxdVOTCsugiKI',});
+    }
     const blurHandler=(e)=>{
         setPhoneDirty(true);
     }
